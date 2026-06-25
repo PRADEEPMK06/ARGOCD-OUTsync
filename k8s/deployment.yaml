@@ -18,8 +18,9 @@ spec:
 
     spec:
       containers:
-      - name: payment-service
-        image: nginx:latest
+        - name: payment-service
+          image: pradeepmk17/payment-service:latest
+          imagePullPolicy: Always
 
-        ports:
-        - containerPort: 80
+          ports:
+            - containerPort: 80
